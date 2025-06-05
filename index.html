@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stake-Style Slot Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stake-Style Slot</h1>
+    <div id="slot">
+        <div class="reel" id="reel1"></div>
+        <div class="reel" id="reel2"></div>
+        <div class="reel" id="reel3"></div>
+        <div class="reel" id="reel4"></div>
+        <div class="reel" id="reel5"></div>
+    </div>
+    <button onclick="spin()">Spin</button>
+    <p id="result"></p>
+
+    <h2>Payout Table</h2>
+    <table id="payout-table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Match 3</th>
+                <th>Match 4</th>
+                <th>Match 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="symbols/cherry.png" alt="🍒" width="24"></td><td>15</td><td>20</td><td>25</td></tr>
+            <tr><td><img src="symbols/lemon.png" alt="🍋" width="24"></td><td>20</td><td>25</td><td>30</td></tr>
+            <tr><td><img src="symbols/bell.png" alt="🔔" width="24"></td><td>25</td><td>30</td><td>35</td></tr>
+            <tr><td><img src="symbols/diamond.png" alt="💎" width="24"></td><td>30</td><td>35</td><td>40</td></tr>
+            <tr><td><img src="symbols/seven.png" alt="7️⃣" width="24"></td><td>50</td><td>60</td><td>75</td></tr>
+            <tr><td><img src="symbols/star.png" alt="⭐" width="24"></td><td>40</td><td>50</td><td>60</td></tr>
+            <tr><td><img src="symbols/clover.png" alt="🍀" width="24"></td><td>75</td><td>90</td><td>100</td></tr>
+        </tbody>
+    </table>
+
+    <audio id="spinSound" src="audio/spin.mp3"></audio>
+    <audio id="winSound" src="audio/win.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
